@@ -1,0 +1,772 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+body{
+    cursor: none;
+    color: white;
+}
+/* Cursor CSS */
+.cursor1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 3rem;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: 0.1s;
+    z-index: 100;
+    
+}
+.cursor2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #75DAB4;
+    border: 1px solid #75DAB4;
+    border-radius: 3rem;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: 0.01s;
+    z-index: 100;
+    
+}
+/* ~ selector 
+It is general sibling combinator and similar to Adjacent sibling combinator. 
+The difference is that the second selector does NOT have to 
+immediately follow the first one means It will select all elements that is 
+preceded by the former selector.
+*/
+
+
+.btn > a{
+    all: unset;
+    
+}
+
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #0C0F16;
+    position: relative;
+}
+
+/* Fixed Navbar CSS  */
+.fixed-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #11141B;
+    /* box-shadow: 0px 10px 10px #75DAB4; */
+}
+.fixed-navbar-content{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    height: 100%;
+    justify-content: space-between;
+}
+.fixed-navbar-content-left{
+    display: flex;
+    width: 100px;
+    flex: 1;
+}
+.fixed-navbar-content-right{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Hero Section CSS */
+.Barlow-Condensed-font{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.pre-content1::before{
+    content: ". : ";
+    color: #75DAB4;
+    width: 4px;
+    height: 4px;
+}
+
+.hero-section-wrapper{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 130px;
+    
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+}
+.hero-section-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.hero-section-right img{
+    width: 670px;
+    height: 670px;
+}
+
+.hero-section-left > h2{
+    margin-bottom: 10px;
+}
+.hero-section-left > p{
+    margin-bottom: 20px;
+    line-height: 30px;
+    word-spacing: 1px;
+    color: lightgray;
+}
+.hero-section-left > h1{
+    margin-bottom: 20px;
+}
+
+.price-inc,.join-today{
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    text-align: center;
+}   
+
+.price-inc{
+    margin-top: 50px;   
+}
+
+.join-today{
+    color: #6C6E71;
+}
+
+.monthly-fees{
+    text-align: center;
+}
+
+.hustler-uni-btn{
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 10px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    color: #0C0F16;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.timer-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.hours,.minutes, .seconds{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* Escape The Matrix Section CSS */
+.escape-the-matrix-section{
+    background-color: #11141B;
+    padding-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+.escape-the-matrix-section > h2{
+    letter-spacing: 15px;
+    font-size: small;
+    color: #75DAB4;
+}
+.escape-the-matrix-section > h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 70px;
+    word-spacing: 2px;
+    margin-top: 20px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.escape-the-matrix-section > p{
+    line-height: 27px;
+    color: lightgray;
+    font-size: 15px;
+    word-spacing: 1px;
+    margin: 0 0 30px;
+}
+.secure-spot-today-btn{
+    margin-top: 70px;
+    padding: 30px 30px;
+}
+.hustle-uni-shadow-text{
+    position: relative;
+    top: 60px;
+    font-size: 154px;
+    line-height: 27px;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 0.5px white;
+    color: #0C0F16;
+    opacity: 0.1;
+}
+
+ /* The Curriculum Section CSS  */
+ 
+.curriculum-section{
+    width: 100%;
+    background-color: #11141B;
+    padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    font-family: "Poppins" sans-serif;
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.curriculum-section > p{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 14px;
+    margin: 10px 0 5px;
+    font-weight: 300;
+    color: #75DAB4;
+}
+
+.curriculum-section > h1{
+    font-size: 80px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.curriculum-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 100px;
+    margin: 0 auto;
+    column-gap: 30px;
+    row-gap: 150px;
+    margin-bottom: 150px;
+    
+}
+
+.curriculum-grid > div{
+    width: 340px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.black-grid{
+    background-color: #181B21;
+}
+.green-grid{
+    background-color: #75DAB4;
+}
+
+.div2{
+    position: relative;
+    top: 20%;
+}
+.div3{
+    position: relative;
+    top: 40%;
+}
+.div5{
+    position: relative;
+    top: 20%;
+}
+.div6{
+    position: relative;
+    top: 40%;
+}
+
+.apply-join{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: start;
+    margin-left: 220px;
+}
+.apply-join span{
+    background-color: darkgray;
+}
+.cirriculum-uni-shadow-text{
+    position: relative;
+    top: 60px;
+    font-size: 154px;
+    line-height: 27px;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 0.5px white;
+    color: #0C0F16;
+    opacity: 0.1;
+}
+
+
+/* Students Results Section CSS */
+.meet-the-students-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+.meet-the-students-section > p{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 14px;
+    margin: 10px 0 5px;
+    font-weight: 300;
+    color: #75DAB4;
+}
+.meet-the-students-section > h1{
+    font-size: 80px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.all-hu-div{
+    width: 10%;
+    display: flex;
+    background-color: #16191F;
+    border: 1px solid #16191F;
+    border-radius: 2rem;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    font-family: "Poppins" , sans-serif;
+}
+.a-dot{
+    color: #75DAB4;
+}
+
+.students-results-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.s1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 10px;
+    text-align: center;
+}
+
+.s1 img{
+    width: 270px;
+}
+.hu-p1{
+    color: #6C6E71;
+}
+
+
+/* HU 5.0 Trailer Video Section  */
+.hu5-trailer-video-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0C0F16;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+/* Pricing Section CSS */
+.pricing-section{
+    display: flex;
+    flex-direction: column;
+    font-family: "Barlow Condensed" ,sans-serif;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background-color: #11141B;
+    padding-top: 40px;
+}
+.pricing-section p:first-of-type{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 14px;
+    margin: 10px 0 5px;
+    font-weight: 300;
+    color: #75DAB4;
+}
+.pricing-section p:last-of-type{
+    font-size: 15px;
+    color: lightgray;
+}
+.pricing-section > h1{
+    font-size: 60px;
+    line-height: 112px;
+    letter-spacing: 4px;
+    margin: 20px 0px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.secure-spot-btn{
+    /* maansform: translate(-50%,-50%); */
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 10px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    color: #0C0F16;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Buggati section CSS */
+.buggati-section{
+    padding-top: 30px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap:30px;
+    padding-bottom:150px
+}
+.buggati-left-div img{
+    border-radius: 1rem;
+}
+.buggati-right-div{
+    display: flex;
+    flex-direction: column;
+
+}
+.buggati-right-div > p{
+    color: lightgray;
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    word-spacing: 1px;
+    font-family: 300;
+    margin-bottom: 30px;
+}
+.jbtn{
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 10px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    color: #0C0F16;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Escape The Matrix Section2 CSS */
+.escape-the-matrix-section2{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    gap: 100px;
+    padding-bottom: 100px;
+}
+.escape-matrix-right-div img{
+    border-radius: 2rem;
+    height: 500px;
+}
+.escape-matrix-left-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.escape-matrix-left-div h1{
+    font-family: "Barlow Condensed" ,sans-serif;
+    font-size: 61px;
+    line-height: 73px;
+    margin: 20px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: baseline;
+}
+.escape-matrix-left-div h1 span{
+    background-color: #75DAB4;
+    border-radius: 1.2rem;
+}
+.escape-matrix-left-div button{
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 10px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* nine-to-five-section CSS */
+.nine-to-five-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #11141B;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.nine-to-five-section p:first-of-type{
+    font-size: 17px;
+    letter-spacing: 14px;
+    margin: 10px 0px 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #75DAB4;
+}
+.nine-to-five-section h1{
+    font-size: 80px;
+    line-height: 112px;
+    letter-spacing: 4px;
+    margin: 20px 0px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 60%;
+    text-align: center;
+}
+
+.nine-btn{
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 20px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+/* Success-is-learnt-section */
+.escape-the-matrix-section3{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 10px;
+    gap: 20px;
+    background-color: #0C0F16;
+}
+.escape-the-matrix-section3 div:first-of-type{
+    text-align: start;
+}
+.escape-the-matrix-section3 div:first-of-type button{
+    padding: 20px;
+}
+
+
+/* Buckle Section CSS */
+.buckle-section{
+    background-color: #11141B;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+.buckle-section p:first-of-type{
+    font-size: 17px;
+    letter-spacing: 14px;
+    margin: 10px 0px 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #75DAB4;
+}
+.buckle-section h1{
+    font-size: 80px;
+    line-height: 112px;
+    letter-spacing: 4px;
+    margin: 20px 0px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.buckle-section p:last-of-type{
+    color: lightgray;
+    margin: 10px 0px;
+}
+
+.buckle-section button{
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 20px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* FAQ section CSS */
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #11141B;
+    padding-bottom: 100px;
+}
+.faq h1{
+    font-size: 80px;
+    line-height: 112px;
+    letter-spacing: 4px;
+    margin: 20px 0px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.qna{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: lightgray;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.faq img{
+    margin-top: 30px;
+}
+.faq button{
+    width: fit-content;
+    background-color: #75DAB4;
+    padding: 20px;
+    border: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* END SECTION CSS */
+.end-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.end-top{
+    display: flex;
+    width: 100%;
+}
+.end-top-left{
+    background-color: #151921;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.end-top-right{
+    width: 50%;
+    background-color: #11141B;
+}
+
+.end-bottom{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.c1{
+    width: 50px;
+    height: 50px;
+    border-radius: 2rem;
+    background-color: rebeccapurple;
+}
+.end-top-left p span{
+    background-color: lightgray;
+    color: black;
+}
